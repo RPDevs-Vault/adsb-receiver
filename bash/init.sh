@@ -25,6 +25,9 @@ fi
 
 ## ATTEMPT TO CHANGE AND/OR UPDATE THE REPOSITORY
 
+log_message "Setting Git to ignore permission changes"
+git config core.fileMode false
+
 if [[ "${RECEIVER_DEVELOPMENT_MODE}" != "true" ]]; then
     current_branch=$(git rev-parse --abbrev-ref HEAD)
 
@@ -123,6 +126,9 @@ fi
 
 
 ## INSTALLATION COMPLETE
+
+log_message "Setting Git to notice permission changes"
+git config core.fileMode true
 
 whiptail --backtitle "${RECEIVER_PROJECT_TITLE}" \
          --title "Software Installation Complete" \
