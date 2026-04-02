@@ -61,6 +61,7 @@ check_package python3-pip
 check_package python3-setuptools
 check_package python3-venv
 check_package python3-wheel
+check_package rsyslog
 check_package tcl-dev
 check_package tcl-tls
 check_package tcl8.6-dev
