@@ -4,6 +4,7 @@ The following is a history of the changes made to this project.
 
 ## v2.8.10 *(Coming soon...)*
 
+* Check for the rsyslog package before installing PiAware.
 * Refactored core bash scripts.
 * The no logging parameter option is now respected.
 * Correct install script is used when BeastSpliter is selected.
