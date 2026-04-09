@@ -78,12 +78,10 @@ When setting up the portal you will have to choose between a lite or advanced in
 
 The project currently supports the following Linux distributions.
 
-* Raspberry PI OS _(Legacy, Current*)_
-* Debian _(Bullseye, Bookworm, Trixie*)_
-* Ubuntu _(Jammy, Noble Numbat*, Questing Quokka*)_
+* Raspberry PI OS _(Legacy, Current)_
+* Debian _(Bookworm, Trixie)_
+* Ubuntu _(Jammy Jellyfish, Noble Numbat, Questing Quokka)_
 
 _These scripts should work most any Debian based distributions_
 
 Support is available via this repository through the use of the issue tracker or discussions.
-
-_* Requires an unofficial fix to install PiAware._
