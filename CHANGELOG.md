@@ -2,8 +2,11 @@
 
 The following is a history of the changes made to this project.
 
-## v2.8.10 *(Coming soon...)*
+## v2.8.10 *(April 9th, 2026)*
 
+* Trixie, Noble and Questing uses the official piaware_builder dev branch.
+* Correct Ubuntu versions are associated with matching Debian version.
+* Specify correct versions of PHP for Noble and Questing.
 * Check for the rsyslog package before installing PiAware.
 * Refactored core bash scripts.
 * The no logging parameter option is now respected.
