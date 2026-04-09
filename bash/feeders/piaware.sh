@@ -1,17 +1,5 @@
 #!/bin/bash
 
-# THE FLIGHTAWARE PIAWARE CLIENT SETUP SCRIPT
-
-# JPROCHAZKA/PIAWARE_BUILDER REPOSITORY
-# -------------------------------------------------------------------------------------
-# I submitted a fix to support Debian Trixie and Ubuntu Noble Numbat to FlightAware's
-# piaware_builder repository. Until the changes are merged into their Git reposiory
-# the installation will be done using the fork I created along with the branch which
-# contains the changes needed in order to build the package.
-#
-# https://github.com/flightaware/piaware_builder/pull/26
-
-
 ## PRE INSTALLATION OPERATIONS
 
 source $RECEIVER_BASH_DIRECTORY/variables.sh
@@ -96,8 +84,8 @@ else
     echo ""
 
     # --- START TEMPORARY NOBLE FIX ---
-    if [[ "${RECEIVER_OS_CODE_NAME}" == "noble" ]]; then
-        git clone -b trixie https://github.com/jprochazka/piaware_builder.git 2>&1 | log_pipe
+    if [[ "${RECEIVER_OS_CODE_NAME}" == "noble" || "${RECEIVER_OS_CODE_NAME}" == "trixie" || "${RECEIVER_OS_CODE_NAME}" == "questing" ]]; then
+        git clone -b dev https://github.com/flightaware/piaware_builder.git 2>&1 | log_pipe
     else
         git clone https://github.com/flightaware/piaware_builder.git 2>&1 | log_pipe
     fi
@@ -123,7 +111,7 @@ case $RECEIVER_OS_CODE_NAME in
     bookworm)
         distro="bookworm"
         ;;
-    noble)
+    trixie | questing | noble)
         distro="trixie"
         ;;
 esac
