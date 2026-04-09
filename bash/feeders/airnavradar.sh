@@ -58,7 +58,7 @@ case $RECEIVER_OS_CODE_NAME in
         echo 'deb https://apt.rb24.com/ bookworm main' > /etc/apt/sources.list.d/rb24.list
         ;;
     trixie | questing | noble)
-        distro="trixie"
+         echo 'deb https://apt.rb24.com/ trixie main' > /etc/apt/sources.list.d/rb24.list
         ;;
 esac
 log_message "Setting repository distribution to ${distro}"
