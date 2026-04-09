@@ -301,7 +301,7 @@ case $RECEIVER_OS_DISTRIBUTION in
         ;;
     debian)
         if [[ "${RECEIVER_OS_CODE_NAME}" == "bookworm" ]]; then php_version="8.2"; fi
-        if [[ "${RECEIVER_OS_CODE_NAME}" == "bullseye" ]]; then php_version="7.4"; fi
+        if [[ "${RECEIVER_OS_CODE_NAME}" == "trixie" ]]; then php_version="8.4"; fi
         ;;
 esac
 check_package php${php_version}-cgi
