@@ -105,7 +105,7 @@ cd $RECEIVER_BUILD_DIRECTORY/piaware_builder
 log_message "Determining which piaware_builder build strategy should be use"
 distro="bookworm"
 case $RECEIVER_OS_CODE_NAME in
-    bullseye | jammy)
+    jammy)
         distro="bullseye"
         ;;
     bookworm)
