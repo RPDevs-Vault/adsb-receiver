@@ -57,7 +57,7 @@ case $RECEIVER_OS_CODE_NAME in
     bookworm)
         echo 'deb https://apt.rb24.com/ bookworm main' > /etc/apt/sources.list.d/rb24.list
         ;;
-    noble)
+    trixie | questing | noble)
         distro="trixie"
         ;;
 esac
